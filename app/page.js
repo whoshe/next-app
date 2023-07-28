@@ -28,9 +28,9 @@ export default function Home() {
             </p>
           </h1>
           <search className="join w-full my-2 mb-6">
-            <button className="btn btn-lg rounded-l-full bg-transparent noHover join-item ">
+            <button className="btn btn-lg rounded-l-full bg-transparent noHover join-item">
               {/** 동네서점 심볼 */}
-              <MagnifyingGlassIcon className="h-6 w-6 absolute text-gray-300" />
+              <MagnifyingGlassIcon className="h-6 w-6 absolute" />
             </button>
 
             <input

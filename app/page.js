@@ -4,21 +4,14 @@ import {
   HandRaisedIcon,
   MagnifyingGlassIcon,
 } from '@heroicons/react/24/outline';
-import BI from '/public/img/logo.svg';
+import BI from '@/public/img/logo.svg';
 
 export default function Home() {
   return (
     <>
       <main className="flex flex-col h-screen">
-                  <div className="join">
-            <input
-              className="input input-bordered join-item"
-              placeholder="Email"
-            />
-            <button className="btn join-item rounded-r-full">Subscribe</button>
-          </div>
         <nav className="container navbar mx-auto">
-          <a className="btn btn-lg btn-ghost text-lg">탐색</a>
+          <a className="btn btn-lg btn-ghost text-lg">맞나? </a>
         </nav>
         <section className="container mx-auto max-w-2xl flex flex-col justify-center flex-grow p-4">
           <h1 className="text-3xl">

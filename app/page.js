@@ -61,7 +61,7 @@ export default function Home() {
           }).slice(0,10)
           .map((item) => (
             <li key={item.fruit} onClick={() => onSearch(item.fruit)} className=''><a><div>{item.fruit}
-            <span className='badge badge-md ml-2'>강원특별자치도 고성군 간성읍 흘리길 176 </span></div></a></li>
+            <span className='badge badge-md ml-2'>강원도 고성군</span></div></a></li>
           ))} 
             </ul>
           </div>

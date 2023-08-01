@@ -38,7 +38,7 @@ export default function Home() {
             </p>
           </h1>
 
-          <search className="join w-full border rounded-full shadow-sm my-2">
+          <search className="join w-full border rounded-full my-2 shadow-sm">
             <button className="btn btn-lg rounded-l-full bg-transparent noHover join-item">
               {/** 동네서점 심볼 */}
               <MagnifyingGlassIcon className="h-6 w-6 absolute" />
@@ -53,8 +53,8 @@ export default function Home() {
             </button>
           </search>
           
-          <search-result>
-            <ul className='w-full menu menu-lg rounded-box border shadow-sm bg-base-100'>
+          <search-result className='w-full'>
+            <ul className='menu rounded-box border shadow-sm bg-base-100'>
           {data.filter(item => {
             const searchTerm = value.toLowerCase();
             const fruitName = item.fruit.toLowerCase();

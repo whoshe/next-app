@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import {
-  HandRaisedIcon,
+  MapPinIcon,
   MagnifyingGlassIcon,
 } from '@heroicons/react/24/outline';
 import BI from '@/public/img/logo.svg';
@@ -40,7 +40,7 @@ export default function Home() {
 
           <search className="join w-full border rounded-full my-2 shadow-sm">
             <button className="btn btn-lg rounded-l-full bg-transparent noHover join-item">
-              {/** 동네서점 심볼 */}
+              {/** 확대경 심볼 */}
               <MagnifyingGlassIcon className="h-6 w-6 absolute" />
             </button>
 
@@ -65,7 +65,11 @@ export default function Home() {
             <li key={item.fruit} onClick={() => onSearch(item.fruit)}>
               <a>
                 <div clasName=''>
-                <MagnifyingGlassIcon className="h-6 w-6 text-gray-300 mr-1" /> 
+                  {/** 장소(특정) 태그인 경우 */}
+                <MapPinIcon className="h-6 w-6 text-gray-300 mr-1" />
+                {/** 지역(행정구역) 및 취향, 활동, 주제 태그인 경우  
+                 * <MagnifyingGlassIcon className="h-6 w-6 text-gray-300 mr-1" /> 
+                */}
                 </div>
                 <div>
                   <div className='text-xl'>{item.fruit}</div>

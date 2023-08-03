@@ -17,6 +17,7 @@ export default function Home() {
     setValue(searchTerm);
     console.log('search', searchTerm);
   }
+  
   return (
     <>
       <main className="flex flex-col h-screen">
@@ -83,8 +84,6 @@ export default function Home() {
           </search-result>
 
         </section>
-
-
 
         <footer className="footer container mx-auto p-4">
           <div className="items-center grid-flow-col">

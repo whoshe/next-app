@@ -1,11 +1,15 @@
 "use client";
 import { Drawer } from "vaul";
+import { PlusIcon } from '@heroicons/react/24/outline'; 
 
 export default function MyDrawer() {
   return (
     <Drawer.Root>
       <Drawer.Trigger asChild>
-        <button>Open Drawer</button>
+        <span className="badge badge-lg badge-transparent border-dash">
+        <PlusIcon className="h-6 w-6 text-gray-400" />
+          세부 선택
+          </span>
       </Drawer.Trigger>
       <Drawer.Portal>
         <Drawer.Overlay className="fixed inset-0 bg-black/40" />

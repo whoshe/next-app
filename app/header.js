@@ -1,8 +1,11 @@
 import Link from 'next/link';
 
 export default async function Header() {
-  const resp = await fetch('http://localhost:9999/topics');
+  const resp = await fetch(process.env.NEXT_PUBLIC_API_URL + 'topics', {
+    cache: 'no-store',
+  });
   const topics = await resp.json();
+  console.log('layout.js/topics', topics);
 
   return (
     <>
